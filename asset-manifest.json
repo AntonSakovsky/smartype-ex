@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/smartype-ex/static/css/main.a9b40558.css",
-    "main.js": "/smartype-ex/static/js/main.034bf747.js",
+    "main.js": "/smartype-ex/static/js/main.03c255f7.js",
     "static/media/certification-hand.png": "/smartype-ex/static/media/certification-hand.39cb5f133eec7caa518d.png",
     "static/media/keyboard.png": "/smartype-ex/static/media/keyboard.18817c34cff3e84f130f.png",
     "static/media/fingers.png": "/smartype-ex/static/media/fingers.70e9d43a5daf933390e0.png",
@@ -12,10 +12,10 @@
     "static/media/profile_icon.jpg": "/smartype-ex/static/media/profile_icon.c101f93292b8259cb29e.jpg",
     "index.html": "/smartype-ex/index.html",
     "main.a9b40558.css.map": "/smartype-ex/static/css/main.a9b40558.css.map",
-    "main.034bf747.js.map": "/smartype-ex/static/js/main.034bf747.js.map"
+    "main.03c255f7.js.map": "/smartype-ex/static/js/main.03c255f7.js.map"
   },
   "entrypoints": [
     "static/css/main.a9b40558.css",
-    "static/js/main.034bf747.js"
+    "static/js/main.03c255f7.js"
   ]
 }
