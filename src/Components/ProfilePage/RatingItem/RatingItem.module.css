@@ -1,0 +1,54 @@
+.profileRatingItem{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 700px;
+    font-size: 18px;
+    color: var(--color-black);
+    padding: 15px 10px;
+}
+.profileRatingItem:hover{
+    background-color: rgb(242, 242, 242);
+}
+.profileRatingSpeed i{
+    color: rgb(222, 111, 130);
+}
+.profileRatingAccuracy i{
+    color: red;
+}
+.ratingUserInfo{
+    display: flex;
+}
+.statsWrap{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.stat{
+    margin-right: 20px;
+}
+.stat span{
+    font-weight: bold;
+    margin-left: 3px;
+}
+.profileRatingPosition{
+    margin-right: 10px;
+}
+.me{
+    background-color: #dbf0fd !important;
+}
+@media (max-width: 767px){
+    .profileRatingItem{
+        width: 100%;
+    }
+}
+@media (max-width:551px){
+    .profileRatingItem{
+        padding: 10px 5px;
+    }
+}
+@media (max-width:445px){
+    .profileRatingItem{
+        display: block;
+    }
+}

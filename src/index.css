@@ -1,0 +1,64 @@
+:root{
+  --bg-level: #0072c4;
+  --bg-blue: #0e95f7;
+  --bg-auth: #7dc3f5;
+  --bg-level-sides: #005c9d;
+  --bg-burger: #0e95f7;
+  --lang-ul: #e5e5e5;
+  --lang-li: #d6d6d6;
+  --lang-li-hover: #cccccc;
+  --bg-link-active: #0083e1;
+  --bg-link-hover: #199fff;
+  --lang-border: 1px solid #c8c8c8;
+  --border-radius: 10px;
+  --color-white: white;
+  --color-black: #313131;
+  --bg-body: #e0e0e0;
+  --bg-body-blue: #55c5ff;
+  --ring-height: 80px;
+  --ring-div-height: 64px;
+  --ring-mt: 0px;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  background-color: var(--bg-body);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+i {
+  font-family: fontawesome !important;
+}
+.container{
+  width: 1180px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1201px) {
+  .container{
+      width: 1020px;
+  }
+}
+
+@media (max-width: 1041px) {
+  .container{
+      width: 880px;
+  }
+}
+@media (max-width: 901px){
+  .container{
+      width: 100%;
+  }
+}

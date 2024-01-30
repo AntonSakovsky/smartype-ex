@@ -1,0 +1,27 @@
+.mainLevelsWrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.levelsWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;  
+}
+
+.mainTitle{
+    margin: 20px 0;
+}
+
+.practiceDelimiter{
+    width: 98%;
+}
+.wrapper{
+    width: 100%;
+}
+.main {
+    background-color: white;
+    border-radius: var(--border-radius);
+    display: flex;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.144);
+}

@@ -1,0 +1,26 @@
+.smallScreen{
+    align-items: center;
+    justify-content: center;
+    max-width: 767px;
+    border-radius: 20px;
+    background-color: white;
+    height: 50vh;
+    min-height: 200px;
+    padding: 20px;
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+}
+.smallScreenImg{
+    width: 30%;
+}
+.smallScreen .description{
+    font-size: 16px;
+}
+
+@media screen and (max-width:768px) {
+    .smallScreen{
+        display: flex;
+        width: 100%;
+    }
+}

@@ -1,0 +1,57 @@
+.profileLevelsItem{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: var(--color-black);
+    padding: 15px 10px;
+}
+.profileLevelsItem:hover{
+    background-color: rgb(242, 242, 242);
+}
+.profileLevelName{
+    margin-right: 100px;
+    font-weight: bold;
+}
+.stat{
+    margin-right: 20px;
+}
+.stat span{
+    font-weight: bold;
+    margin-left: 3px;
+}
+.profileLevelTime i{
+    color: yellowgreen;
+}
+.profileLevelSpeed i{
+    color: rgb(222, 111, 130);
+}
+.profileLevelAccuracy i{
+    color: red;
+}
+.levelStatsWrap{
+display: flex;
+}
+
+@media (max-width: 767px){
+    .profileLevelName{
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:700px){
+    .profileLevelsItem{
+        display: block;
+    }
+    .profileLevelName{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:551px){
+    .profileLevelsItem{
+        padding: 10px 5px;
+    }
+    .levelStatsWrap{
+        flex-wrap: wrap;
+    }
+}

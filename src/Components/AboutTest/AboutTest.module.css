@@ -1,0 +1,183 @@
+.headerOverlay{
+    width: 100%;
+    height: 420px;
+    background-color: #55c5ff;
+    position: absolute;
+    top: -95px;
+    left: 0;
+    z-index: -1;
+}
+.mainTest{
+    background-color: #55c5ff;
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.speedImg{
+    width: 600px;
+}
+.speedImg img{
+    width: 100%;
+    position: relative;
+    top: 4px;
+   
+}
+.mainTestWrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.startTestWrap{
+    margin-left: -70px;
+}
+.mainTest__title {
+    color: var(--color-white);
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    width:330px
+}
+.mainTest__description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    line-height: 125%;
+    width:430px
+}
+.mainTest__btn {
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-white);
+    text-transform: uppercase;
+    display: inline-block;
+    width: 250px;
+    padding: 11px ;
+    background-color: var(--bg-link-active);
+    border: 3px solid #23b4fc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .15s ease;
+}
+.mainTest__btn:hover{
+    background-color: #017bd2;
+}
+
+/* Section */
+.aboutTest {
+    background-color: var(--bg-body);
+}
+.aboutTestList {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.aboutTestListItem {
+}
+.aboutTestTitle, .startTestTitle{
+    color: black;
+    width: 350px;
+    font-size: 26px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.aboutTestDescr, .startTestDesrc{
+    color: var(--color-black);
+    width: 400px;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+.aboutTestDescr:last-child{
+    margin-bottom: 40px;
+}
+/* Section end */
+
+/* Start test section */
+.startTest{
+    width: 100%;
+    text-align: center;
+    background-color: #55c5ff;
+    padding: 40px 0;
+    padding-bottom: 140px;
+}
+.startTestTitle{
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(255, 255, 255); 
+    font-weight: normal;
+}
+.startTestDescr{
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 350px;
+    color: rgba(255, 255, 255, 0.9);
+}
+/* Start test section end */
+
+
+
+@media screen and (max-width:901px){
+    .mainTestWrap, .aboutTest{
+        padding: 0 10px;
+    }
+    .mainTest__title{
+        width: 270px;
+        font-size: 30px;
+    }
+    .mainTest__description{
+        width: 300px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:833px){
+    .aboutTest{
+        text-align: center;
+    }
+    .aboutTestList{
+        display: inline-block;
+    }
+    .speedImg{
+        width: 400px;
+    }
+}
+@media screen and (max-width:601px){
+    .mainTest__title{
+        font-size: 28px;
+    }
+    .mainTest__description{
+        font-size: 14px;
+        line-height: 115%;
+    }
+    .mainTest__btn{
+        margin-bottom: 30px;
+    }
+    .mainTestWrap{
+        flex-direction: column;
+    }
+    .speedImg{
+        margin-bottom: 20px;
+    }
+    .speedImg img{
+        top: 0;
+    }
+    .startTestWrap{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:450px){
+    .aboutTestTitle, .startTestTitle{
+        width: 300px;
+    }
+    .aboutTestDescr, .startTestDescr{
+        width: 300px;
+    }
+    .speedImg{
+        width: 315px;
+    }
+}

@@ -1,0 +1,163 @@
+.layoutSelectWrap{
+    width: 767px;
+    margin: 0 auto;
+    text-align: right;
+    position: relative;
+}
+.layoutSelect{
+    display: inline-block;
+    width: 170px;
+    text-align: right;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-right: 20px;
+    transition: all .15s ease;
+    -o-transition: all .15s ease ;
+    -moz-transition: all .15s ease;
+    -webkit-transition: all .15s ease;
+}
+.layoutSelect:hover,
+.layoutSelect:hover ~ i{
+    color: rgb(237, 237, 237);
+    background-color: #329ed5;
+}
+.layoutSelect i{
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 5px;
+    transition: all .15s ease;
+    -o-transition: all .15s ease ;
+    -moz-transition: all .15s ease;
+    -webkit-transition: all .15s ease;
+}
+.layoutUl {
+    list-style: none;
+    background-color: #dbf0ff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    max-height: 150px;
+    position: absolute;
+    right: 0;
+    overflow: auto;
+    top: 30px;
+}
+.layoutLi {
+    color: var(--color-black);
+    text-align: left;
+    padding: 3px;
+    
+}
+.layoutLi:hover {
+    background-color: #b7d0e2;
+}
+
+
+.testing {
+    padding: 20px 30px;
+    border-radius: 20px;
+    width: 767px;
+    margin: 0 auto;
+    background-color: var(--color-white);
+    user-select: none;
+}
+.testWrap {
+    display: flex;
+    justify-content: space-between;
+}
+.testText {
+    width: 570px;
+    color: var(--color-black);
+    line-height: 140%;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.testText span{
+    padding: 3px 0;
+    border-radius: 3px;
+    white-space: pre;
+}
+.hide{
+    display: none;
+}
+.statistics {
+    max-width: 120px;
+}
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.characteristic {
+    color: rgb(123, 123, 123);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.characteristicHeader {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(102, 102, 102);
+    margin-bottom: 10px;
+}
+
+.characteristicHeader i{
+    font-size: 18px;
+}
+
+.characteristicTitle {
+    margin-left: 20px;
+}
+.characteristicRes {
+    color: var(--bg-body-blue)
+}
+.characteristicRes span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.restart{
+    text-decoration: none;
+    font-size: 18px;
+    background-image: url('../../img/redo.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 25px;
+    color: #bcbc05;
+    cursor: pointer;
+    /* padding: 5px; */
+}
+.restartWrap{
+    padding: 5px;
+    transition: all .2s ease;
+}
+.restartWrap:hover{
+    background-color: #ffffd4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 1px #ebeb4d;
+}
+
+.tred{
+    background-color: red;
+    color: var(--color-white);
+}
+.tgreen{
+    background-color: rgb(0, 194, 0);
+    color: var(--color-white);
+}
+.passedText{
+    color: rgb(0, 194, 0);
+}
+@media screen and (max-width: 768px){
+    .testingPageContainer {
+        display: none;
+    }
+}
+
+

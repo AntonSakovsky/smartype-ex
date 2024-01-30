@@ -1,0 +1,50 @@
+.profileTestsItem{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: var(--color-black);
+    padding: 15px 10px;
+}
+.profileTestsItem:hover{
+    background-color: rgb(242, 242, 242);
+}
+.userTestInfo{
+    display: flex;
+}
+.profileTestNumber{
+    margin-right: 10px;
+    font-weight: bold;
+}
+.statsWrap{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.profileTestSpeed i{
+    color: rgb(222, 111, 130);
+}
+.profileTestAccuracy i{
+    color: red;
+}
+.stat{
+    margin-right: 20px;
+}
+.stat span{
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+@media (max-width:551px){
+    .profileTestsItem{
+        padding: 10px 5px;
+    }
+}
+
+@media (max-width:445px){
+    .profileTestsItem{
+        display: block;
+    }
+    .userTestInfo{
+        margin-bottom: 5px;
+    }
+}

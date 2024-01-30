@@ -1,0 +1,21 @@
+.FAQsection .FAQ{
+    margin-top: -100px;
+    margin-bottom: 0;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    padding: 50px 20px;
+}
+.FAQsection .FAQtitle{
+    font-size: 2em;
+}
+.FAQsection .img{
+    width: 130px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width:851px) {
+    .FAQsection .FAQ{
+        border-radius: 0px;
+        margin-top: -80px;
+    }
+}

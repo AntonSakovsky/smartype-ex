@@ -1,0 +1,113 @@
+.overlay{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.closed{
+    display: none;
+}
+.level-end-container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.716);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 700px;
+    filter: drop-shadow(0px 0px 10px  rgba(0, 0, 0, 0.8));
+    animation: show .4s linear;
+}
+@keyframes show {
+    0% {
+        transform:translate(-50%, -50%) rotateX(-90deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform:translate(-50%, -50%) rotateX(0deg);
+    }
+}
+.level-end-title {
+    text-align: center;
+    color: var(--color-black);
+    margin-bottom: 30px;
+}
+.results {
+    display: flex;
+    justify-content: center;
+    background-color: #3b58b7;
+    margin-bottom: 40px;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    position: relative;
+}
+.results::after,
+.results::before{
+    content: '';
+    display: block;
+    position: absolute;
+}
+.results::before{
+    width: 10px;
+    height: 10px;
+    top: calc(100% - 5px);
+    left: 0px;
+    z-index: -1;
+    transform: skewY(45deg);
+    background-color: #233779;
+}
+.results::after{
+    width: 10px;
+    height: 10px;
+    top: calc(100% - 5px);
+    right: 0;
+    z-index: -1;
+    
+    transform: skewY(-45deg);
+    -o-transform: skewY(-45deg);
+    -ms-transform: skewY(-45deg);
+    -moz-transform: skewY(-45deg);
+    background-color: #233779;
+}
+.results-stat{
+    margin: 30px 30px;
+    color: var(--color-black);
+    font-size: 18px;
+    color: var(--color-white);
+    text-align: center;
+
+}
+.results-stat span {
+    font-size: 26px;
+    font-weight: bold;
+}
+.buttons {
+    text-align: center;
+}
+.exit-btn, .again-btn {
+    height: 35px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(235, 235, 235);
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 6px 20px ;
+    background-color: #28449f;
+    border: 3px solid #13286d;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s ease;
+    margin-right: 10px;
+}
+.exit-btn:hover, .again-btn:hover{
+    background-color: #283e86;
+    transform: scale(1.05);
+}

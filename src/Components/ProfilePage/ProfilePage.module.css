@@ -1,0 +1,193 @@
+.profileMain{
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 30px 40px;
+    position: relative;
+}
+.logOut{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 7px;
+    border-radius: 4px 10px;
+}
+.logOut i{
+    color: red;
+    margin-right: 3px;
+}
+.logOut:hover{
+    background-color: rgb(233, 233, 233);
+    box-shadow: 0px 0px 3px 2px rgba(181, 181, 181, 0.563);
+}
+.profileHeader{
+    display: flex;
+    margin-bottom: 40px;
+}
+.userImg{
+    width: 150px;
+    margin-right: 20px;
+}
+.userImg img{
+    width: 100%;
+}
+.userName{
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: var(--color-black);
+}
+.userBestStats{
+    display: flex;
+    width: 700px;
+    justify-content: space-around;
+    align-items: center;
+}
+.statsItem{
+    display: flex;
+    align-items: center;
+}
+.statsItemIcon{
+    font-size: 40px;
+    margin-right: 10px;
+}
+.statsItemIcon.progress{
+    color: greenyellow;
+    font-size: 40px;
+}
+.statsItemIcon.speed{
+    color: rgb(222, 111, 130);
+    font-size: 40px;
+}
+.statsItemIcon.accuracy{
+    color: red;
+    font-size: 40px;
+}
+.statsItemDescr{
+    text-align: center;
+}
+.statsItemTitle{
+    color: var(--color-black);
+    font-size: 18px;
+    font-weight: bold;
+}
+.statsItemDescr span{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profileNav{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.profileNavLink{
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--color-black);
+    padding: 10px 20px;
+}
+.profileNavLink:hover{
+    background-color: rgb(242, 242, 242);
+}
+.profileNavLink.curr{
+    color: red;
+}
+
+@media (max-width:1041px) {
+    .userBestStats{
+        width: 500px;
+    }
+    .statsItem{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 767px){
+    .userImg{
+        width: 120px;
+    }
+    .userName{
+        font-size: 26px;
+    }
+    .statsItemIcon{
+        font-size: 34px;
+    }
+    .statsItemTitle{
+        font-size: 16px;
+    }
+    .statsItemDescr span{
+        font-size: 20px;
+    }
+    .profileMain{
+        padding: 20px;
+    }
+    .logOut{
+        top: 20px;
+        right: 20px;
+    }
+    
+}
+@media (max-width:700px){
+    .userImg{
+        display: none;
+    }
+    .userBestStats{
+        justify-content: space-between;
+    }
+    
+    .statsItemIcon.accuracy,
+    .statsItemIcon.progress,
+    .statsItemIcon.speed{
+        font-size: 36px;
+    }
+}
+@media (max-width:551px){
+    .profileHeader{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .userName{
+        margin-bottom: 20px;
+    }
+    .statsItemIcon{
+        font-size: 28px;
+    }
+    .statsItemDescr span{
+        font-size: 18px;
+    }
+    .userBestStats{
+        width: 400px;
+    }
+    
+    .stat{
+        margin-bottom: 5px;
+    }
+    .statsWrap{
+        width: 220px;
+    }
+    .statsItemIcon.accuracy,
+    .statsItemIcon.progress,
+    .statsItemIcon.speed{
+        font-size: 34px;
+    }
+}
+@media (max-width:445px){
+    .userBestStats{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .statsItem{
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .profileNavLink{
+        padding: 10px;
+    }
+    
+    .ratingUserInfo{
+        margin-bottom: 5px;
+    }
+}

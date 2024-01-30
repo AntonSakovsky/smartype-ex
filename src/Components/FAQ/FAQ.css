@@ -1,0 +1,38 @@
+.FAQ{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.FAQheader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.FAQheader img{
+    transform: rotate(15deg);
+    max-width: 100%;
+    width: 100px;
+}
+.FAQtitle{
+    font-weight: normal;
+    max-width: 500px;
+}
+
+@media screen and (max-width:851px) {
+    .FAQtitle{
+        font-size: 26px;
+    }
+    .FAQheader img{
+        width: 70px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .FAQtitle{
+        font-size: 24px;
+        max-width: 250px;
+    }
+    .FAQheader img{
+        width: 50px;
+        object-fit: contain;
+    }
+}
